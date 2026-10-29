@@ -1,0 +1,11 @@
+// prisma/schema.prisma — la fuente de verdad del modelo de datos
+
+generator client {
+  provider = "prisma-client"            // cliente moderno de Prisma 7
+  output   = "../src/generated/prisma"  // dónde se genera (no se sube a git)
+}
+
+datasource db {
+  provider = "postgresql"               // la URL vive en prisma7.config.ts → .env
+}
+
