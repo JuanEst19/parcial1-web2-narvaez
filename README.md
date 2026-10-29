@@ -138,3 +138,4 @@ src/
 - **`GET /api/socios/:id/prestamos`**: Historial de préstamos de un socio.
   - Query params: `estado` opcional (`ACTIVO` o `DEVUELTO`).
   - Responde `200` con el arreglo de préstamos ordenados del más reciente al más antiguo, incluyendo libro (`id`, `titulo`, `autor`) en una única consulta sin problema N+1.
+
